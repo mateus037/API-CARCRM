@@ -1,0 +1,29 @@
+{
+  "name": "api-carcrm",
+  "version": "1.0.0",
+  "description": "Api para aplicação CARCRM, revenda de veículos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateus037/API-CARCRM.git"
+  },
+  "author": "MATEUS RODRIGUES MARCOS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateus037/API-CARCRM/issues"
+  },
+  "homepage": "https://github.com/mateus037/API-CARCRM#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "sucrase": "^3.17.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
